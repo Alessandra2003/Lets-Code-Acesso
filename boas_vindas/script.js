@@ -24,14 +24,17 @@ let tituloDaSecao = document.getElementById('tituloDaSecao')
 if(tituloDaSecao){
     
     let usuario = JSON.parse(localStorage.getItem('usuarioLogado')) || [];
+    
     let titulo = document.getElementById('titulo')
+    
     let imagem = document.createElement('img')
+    
     let descricao = document.createElement('p')
     descricao.innerHTML = `Cidade: ${usuario.cidade}<br> Idade:${usuario.idade} <br>Email:${usuario.email}`
 
     imagem.setAttribute('src', usuario.foto)
 
-    tituloDaSecao.textContent += usuario.usuario + '!'
+    tituloDaSecao.textContent += usuario.nome + '!'
     titulo.appendChild(tituloDaSecao)
     titulo.appendChild(imagem)
     titulo.appendChild(descricao)
