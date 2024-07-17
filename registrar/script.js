@@ -15,7 +15,7 @@ async function carregarDados(){
       if (response.ok) {
         alert('Registrado com sucesso!');
       } else {
-        alert(`Erro: ${result.error}`);
+        alert(`VAMOS REGISTRAR UM NOVO USUÁRIO!`);
       }
     } catch (error) {
       console.error('Erro ao registrar:', error);
