@@ -1,5 +1,3 @@
-alert("ALUNOS DO LET'S CODE 2024")
-
 async function carregarDados(){
     let response = await fetch('https://raw.githubusercontent.com/GilsonJunio/Alunos-Do-Lets-Code-2024/main/data.json')
     let data = await response.json()
@@ -42,5 +40,5 @@ const usuarios = JSON.parse(localStorage.getItem('alunos'));
   });
 }
 listarAlunos()
-
+window.Onload(listarAlunos())
 
